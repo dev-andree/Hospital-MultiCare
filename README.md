@@ -16,14 +16,20 @@ UseCase geral do sistema, onde é informado os atores e suas respectivas funcion
 
 ## Funcionalidades do Sistema
 
-- Permite ao usuário realizar cadastros de Médicos, Paciente, Exames e Agendamentos de Consultas
-- Permite ao usuário realizar alterações nos cadastros realizados.
+- Permite ao usuário cadastrar médicos, pacientes, exames e agendamentos de consultas.
+- Oferece ao usuário a capacidade de alterar dados nos cadastros já realizados, mantendo as informações atualizadas.
 
   ## Fluxo do Sistema
 
-  - Apresenta a tela Principal (Home)
-  - Usuário tem opções de cadastramento de Médico, Paciente ou Agendamentos de Consultas
-
+  - Home: Página principal com informações gerais e navegação rápida.
+  - Convênios e Planos de Saúde: Lista de convênios e planos aceitos pelo hospital.
+  - Agendar Consulta: Seleção de médico e data para agendamento de consultas.
+  - Pronto-Socorro: Informações e status de atendimento do pronto-socorro.
+  - Área do Paciente: Acesso ao histórico médico, consultas e atualização de dados.
+  - Exames e Laboratórios: Agendamento de exames e visualização de resultados.
+  - Cadastro de Médico: Formulário para registrar médicos no sistema.
+  - Cadastro de Paciente: Formulário para registrar pacientes no hospital.
+  - Sobre o Hospital: Informações institucionais sobre o hospital.
 
 # Link do GitHub Pages
 [https://dev-andree.github.io/Hospital-MultiCare/](https://dev-andree.github.io/Hospital-MultiCare/)
