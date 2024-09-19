@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #28a745; /* Verde escuro */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #218838; /* Verde mais escuro */
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color: #1c7430; /* Verde ainda mais escuro */
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.info {
+    max-width: 800px;
+    margin: auto;
+}
+
+form {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="date"], input[type="file"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #28a745; /* Verde escuro */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838; /* Verde mais escuro */
+}
+
+#update-button {
+    background-color: #007bff; /* Azul */
+}
+
+#update-button:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}
+
+#delete-button {
+    background-color: #dc3545; /* Vermelho */
+}
+
+#delete-button:hover {
+    background-color: #c82333; /* Vermelho mais escuro */
+}
+
+.hidden {
+    display: none;
+}
+
+#apply-update-button {
+    background-color: #17a2b8; /* Ciano */
+}
+
+#apply-update-button:hover {
+    background-color: #117a8b; /* Ciano mais escuro */
+}

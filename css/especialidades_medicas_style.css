@@ -1,0 +1,159 @@
+/* Regras gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #28a745; /* Verde escuro */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    background: #fff;
+    color: #28a745; /* Verde escuro */
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #28a745; /* Verde escuro */
+    color: #fff;
+}
+
+main {
+    padding: 1rem;
+}
+
+.highlight-box {
+    background: #28a745; /* Verde escuro */
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.highlight-box h2 {
+    margin-top: 0;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#specialties-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#specialties-list li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+#specialties-list li:hover {
+    background: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#specialty-details {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#doctor-list h4 {
+    margin-top: 0;
+}
+
+#doctor-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#doctor-list ul li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+
+#appointment-form {
+    margin-top: 1rem;
+}
+
+#appointment-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#appointment-form select,
+#appointment-form input[type="datetime-local"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#appointment-form button {
+    background: #28a745; /* Verde escuro */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+#appointment-form button:hover {
+    background: #218838; /* Verde mais escuro */
+}
+
+#specialties-list li {
+    color: #000; /* Cor preta */
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+#specialties-list li:hover {
+    background: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

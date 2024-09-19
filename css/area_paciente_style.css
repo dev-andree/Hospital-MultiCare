@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #28a745; /* Verde escuro */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #218838; /* Verde mais escuro */
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color: #1c7430; /* Verde ainda mais escuro */
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.info {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.patient-section, .documents-section, .appointments-section, .update-info-section {
+    background-color: #e9f5e9; /* Verde muito claro */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.patient-section h3, .documents-section h3, .appointments-section h3, .update-info-section h3 {
+    margin-top: 0;
+}
+
+button {
+    background-color: #28a745; /* Verde escuro */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838; /* Verde mais escuro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+
+
+.search-section {
+    background-color: #e9f5e9; /* Verde muito claro */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.search-section h3 {
+    margin-top: 0;
+}
+
+#search {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-patient-form button {
+    padding: 10px 15px;
+    background-color: #28a745; /* Verde escuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-patient-form button:hover {
+    background-color: #218838; /* Verde mais escuro */
+}

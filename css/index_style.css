@@ -1,0 +1,119 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #28a745; /* Verde escuro */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    background: #fff;
+    color: #28a745; /* Verde escuro */
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #28a745; /* Verde escuro */
+    color: #fff;
+}
+
+main {
+    padding: 2rem;
+}
+
+.info {
+    text-align: center;
+}
+
+.highlight-box {
+    background: #28a745; /* Verde escuro */
+    color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.highlight-box h2 {
+    margin-bottom: 1rem;
+}
+
+.highlight-box p {
+    margin-bottom: 1rem;
+}
+
+.highlight-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.highlight-box li {
+    margin-bottom: 1rem;
+}
+
+/* Estilo para o campo de busca e lista de consultas */
+.search-box {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.search-box label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.search-box input {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+.current-consultations {
+    margin-top: 2rem;
+}
+
+.current-consultations h3 {
+    margin-bottom: 1rem;
+}
+
+.current-consultations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.current-consultations li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    background: #f9f9f9;
+}
