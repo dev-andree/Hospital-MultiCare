@@ -1,7 +1,5 @@
 # Hospital-MultiCare
 
-# Hospital-MultiCare
-
 ## Diagrama Geral
 
 Diagrama de E-R utilizado no projeto.
