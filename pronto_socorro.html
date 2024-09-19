@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronto-Socorro / Atendimento de Urgência</title>
+    <link rel="stylesheet" href="css\pronto_socorro_style.css">
+</head>
+<body>
+    <header>
+        <h1>Pronto-Socorro / Atendimento de Urgência</h1>
+        <nav>
+            <a href="index.html" id="home">Início</a>
+            <a href="convenios_planos.html" id="convenios-planos">Convênios e Planos de Saúde</a>
+            <a href="especialidades_medicas.html" id="especialidades">Agendar Consultas</a>
+            <a href="pronto_socorro.html" id="atendimento-urgencia">Pronto-Socorro</a>
+            <a href="area_paciente.html" id="area-paciente">Área do Paciente</a>
+            <a href="exames_laboratorios.html" id="exames-laboratorios">Exames e Laboratórios</a>
+            <a href="cadastro_medico.html" id="cadastro-medico">Cadastro de Médico</a>
+            <a href="cadastro_paciente.html" id="cadastro-paciente">Cadastro de Paciente</a>
+            <a href="sobre_hospital.html" id="sobre-hospital">Sobre o Hospital</a>
+        </nav>
+    </header>
+    <main>
+        <section class="info">
+            <div class="highlight-box">
+                <h2>Status Atual</h2>
+                <p>Tempo de espera: <span id="wait-time">30 minutos</span></p>
+                <p>Número de atendimentos em curso: <span id="ongoing-attendances">5</span></p>
+            </div>
+            <div class="info-section">
+                <h3>Orientações</h3>
+                <p>Como chegar ao hospital:</p>
+                <p><a href="https://www.google.com/maps/place/Hospital+São+Marcelino+Champagnat/@-25.4359584,-49.2487129,17z/data=!3m1!4b1!4m6!3m5!1s0x94dce45382833a69:0xbcacc1ec0b2350db!8m2!3d-25.4359584!4d-49.246138!16s%2Fg%2F11gzk88zh?entry=ttu&g_ep=EgoyMDI0MDkxNS4wIKXMDSoASAFQAw%3D%3D">Clique aqui para visualizar o mapa e obter direções.</a></p>
+                <p>Serviços emergenciais disponíveis:</p>
+                <ul>
+                    <li>Atendimento para traumas</li>
+                    <li>Tratamento de queimaduras</li>
+                    <li>Cuidados com fraturas e lesões</li>
+                </ul>
+            </div>
+            <div class="info-section">
+                <h3>Primeiros Socorros</h3>
+                <p>Orientações para situações específicas:</p>
+                <ul>
+                    <li><a href="https://dryussefali.com.br/artigos/especialista-em-maos/primeiros-socorros-o-que-fazer-em-caso-de-fratura">Como proceder com uma fratura</a></li>
+                    <li><a href="https://drauziovarella.uol.com.br/clinica-geral/como-tratar-queimaduras-de-acordo-com-o-grau/">Como tratar queimaduras</a></li>
+                    <li><a href="#other">Outras situações</a></li>
+                </ul>
+            </div>
+            <div class="info-section">
+                <h3>Fluxos Alternativos</h3>
+                <p><a href="#full-status">Pronto-socorro cheio</a></p>
+                <p><a href="#ambulance-request">Solicitar ambulância</a></p>
+                <p><a href="#documentation">Documentação necessária</a></p>
+            </div>
+        </section>
+    </main>
+    <script src="script/pronto_socorro_script.js"></script>
+</body>
+</html>

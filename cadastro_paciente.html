@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente</title>
+    <link rel="stylesheet" href="css/cadastro_paciente_style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Paciente</h1>
+        <nav>
+            <a href="index.html" id="home">Início</a>
+            <a href="convenios_planos.html" id="convenios-planos">Convênios e Planos de Saúde</a>
+            <a href="especialidades_medicas.html" id="especialidades">Agendar Consultas</a>
+            <a href="pronto_socorro.html" id="atendimento-urgencia">Pronto-Socorro</a>
+            <a href="area_paciente.html" id="area-paciente">Área do Paciente</a>
+            <a href="exames_laboratorios.html" id="exames-laboratorios">Exames e Laboratórios</a>
+            <a href="cadastro_medico.html" id="cadastro-medico">Cadastro de Médico</a>
+            <a href="cadastro_paciente.html" id="cadastro-paciente">Cadastro de Paciente</a>
+            <a href="sobre_hospital.html" id="sobre-hospital">Sobre o Hospital</a>
+        </nav>
+    </header>
+    <main>
+        <section class="info">
+            <h2>Cadastro de Paciente</h2>
+            <form id="patient-registration-form">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="dob">Data de Nascimento:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label for="gender">Gênero:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                        <option value="other">Outro</option>
+                    </select>
+                    
+                    <label for="contact">Contatos:</label>
+                    <input type="text" id="contact" name="contact" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Histórico Médico</legend>
+                    <label for="medical-history">Doenças Pré-existentes e Alergias:</label>
+                    <textarea id="medical-history" name="medical-history" rows="3" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Documentos</legend>
+                    <label for="identity-doc">Documento de Identidade:</label>
+                    <input type="file" id="identity-doc" name="identity-doc" required>
+                    
+                    <label for="address-proof">Comprovante de Endereço:</label>
+                    <input type="file" id="address-proof" name="address-proof" required>
+                </fieldset>
+
+                <button type="submit">Confirmar Cadastro</button>
+                <button type="button" id="update-button">Alterar Informações</button>
+                <button type="button" id="delete-button">Excluir Cadastro</button>
+                
+                <!-- Campos de alteração -->
+                <div id="update-fields" class="hidden">
+                    <h3>Alterar Informações do Paciente</h3>
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="update-name">Nome Completo:</label>
+                        <input type="text" id="update-name" name="update-name">
+                        
+                        <label for="update-dob">Data de Nascimento:</label>
+                        <input type="date" id="update-dob" name="update-dob">
+                        
+                        <label for="update-gender">Gênero:</label>
+                        <select id="update-gender" name="update-gender">
+                            <option value="male">Masculino</option>
+                            <option value="female">Feminino</option>
+                            <option value="other">Outro</option>
+                        </select>
+                        
+                        <label for="update-contact">Contatos:</label>
+                        <input type="text" id="update-contact" name="update-contact">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Histórico Médico</legend>
+                        <label for="update-medical-history">Doenças Pré-existentes e Alergias:</label>
+                        <textarea id="update-medical-history" name="update-medical-history" rows="3"></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Documentos</legend>
+                        <label for="update-identity-doc">Documento de Identidade:</label>
+                        <input type="file" id="update-identity-doc" name="update-identity-doc">
+                        
+                        <label for="update-address-proof">Comprovante de Endereço:</label>
+                        <input type="file" id="update-address-proof" name="update-address-proof">
+                    </fieldset>
+
+                    <button type="button" id="apply-update-button">Aplicar Alterações</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script/cadastro_paciente_script.js"></script>
+    <script>
+        document.getElementById('update-button').addEventListener('click', function() {
+            var updateFields = document.getElementById('update-fields');
+            updateFields.classList.toggle('hidden');
+        });
+
+        document.getElementById('delete-button').addEventListener('click', function() {
+            alert('Cadastro do paciente excluído com sucesso.');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Paciente</title>
+    <link rel="stylesheet" href="css\cadastro_paciente_style.css">
+</head>
+<body>
+    <header>
+        <h1>Área do Paciente</h1>
+        <nav>
+            <a href="index.html" id="home">Início</a>
+            <a href="convenios_planos.html" id="convenios-planos">Convênios e Planos de Saúde</a>
+            <a href="especialidades_medicas.html" id="especialidades">Agendar Consultas</a>
+            <a href="pronto_socorro.html" id="atendimento-urgencia">Pronto-Socorro</a>
+            <a href="area_paciente.html" id="area-paciente">Área do Paciente</a>
+            <a href="exames_laboratorios.html" id="exames-laboratorios">Exames e Laboratórios</a>
+            <a href="cadastro_medico.html" id="cadastro-medico">Cadastro de Médico</a>
+            <a href="cadastro_paciente.html" id="cadastro-paciente">Cadastro de Paciente</a>
+            <a href="sobre_hospital.html" id="sobre-hospital">Sobre o Hospital</a>
+        </nav>
+    </header>
+    <main>
+        <section class="info">
+            <h2>Área do Paciente</h2>
+
+            <div class="search-section">
+                <h3>Buscar Paciente</h3>
+                <form id="search-patient-form">
+                    <input type="text" id="search" name="search" placeholder="Digite o nome do paciente" required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            
+
+            <div class="patient-section">
+                <h3>Histórico Médico</h3>
+                <ul>
+                    <li>Consulta Cardiológica (20/07/2023)</li>
+                    <li>Exame de Sangue (15/06/2023)</li>
+                    <li>Consulta Ortopédica (12/05/2023)</li>
+                </ul>
+            </div>
+            <div class="documents-section">
+                <h3>Documentos Médicos</h3>
+                <p>Faça download de laudos e resultados de exames:</p>
+                <button id="download-documents">Baixar Documentos</button>
+            </div>
+            <div class="appointments-section">
+                <h3>Próximas Consultas e Exames</h3>
+                <p>Visualize e gerencie seus compromissos agendados:</p>
+                <ul>
+                    <li>Consulta com Endocrinologista – 05/10/2024</li>
+                    <li>Exame de Ressonância Magnética – 12/10/2024</li>
+                    <li>Consulta de Retorno Cardiológico – 20/11/2024</li>
+                </ul>
+            </div>
+            <div class="update-info-section">
+                <h3>Atualizar Informações Pessoais</h3>
+                <form id="update-info-form">
+                    <label for="address">Endereço:</label>
+                    <input type="text" id="address" name="address" required>
+                    
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <button type="submit">Atualizar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script\cadastro_paciente_script.js"></script>
+</body>
+</html>

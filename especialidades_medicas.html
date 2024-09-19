@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Consultas</title>
+    <link rel="stylesheet" href="css\especialidades_medicas_style.css">
+</head>
+<body>
+    <header>
+        <h1>Agendar Consultas</h1>
+        <nav>
+            <a href="index.html" id="home">Início</a>
+            <a href="convenios_planos.html" id="convenios-planos">Convênios e Planos de Saúde</a>
+            <a href="especialidades_medicas.html" id="especialidades">Agendar Consultas</a>
+            <a href="pronto_socorro.html" id="atendimento-urgencia">Pronto-Socorro</a>
+            <a href="area_paciente.html" id="area-paciente">Área do Paciente</a>
+            <a href="exames_laboratorios.html" id="exames-laboratorios">Exames e Laboratórios</a>
+            <a href="cadastro_medico.html" id="cadastro-medico">Cadastro de Médico</a>
+            <a href="cadastro_paciente.html" id="cadastro-paciente">Cadastro de Paciente</a>
+            <a href="sobre_hospital.html" id="sobre-hospital">Sobre o Hospital</a>
+        </nav>
+    </header>
+    <main>
+        <section class="info">
+            <div class="highlight-box">
+                <h2>Escolha sua Especialidade</h2>
+                <input type="text" id="search-bar" placeholder="Buscar especialidade...">
+                <ul id="specialties-list">
+                    <!-- Lista de especialidades será gerada pelo JavaScript -->
+                </ul>
+            </div>
+            <div id="specialty-details" class="hidden">
+                <h3>Detalhes da Especialidade</h3>
+                <div id="doctor-list">
+                    <!-- Lista de médicos será gerada pelo JavaScript -->
+                </div>
+                <form id="appointment-form" class="hidden">
+                    <label for="doctor">Escolha o Médico:</label>
+                    <select id="doctor" name="doctor" required>
+                        <!-- Médicos disponíveis serão preenchidos pelo JavaScript -->
+                    </select>
+                    
+                    <label for="appointment-time">Escolha o Horário:</label>
+                    <input type="datetime-local" id="appointment-time" name="appointment-time" required>
+                    
+                    <button type="submit">Confirmar Agendamento</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script\especialidades_medicas_script.js"></script>
+</body>
+</html>

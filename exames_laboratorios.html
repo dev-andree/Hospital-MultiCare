@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exames e Laboratórios</title>
+    <link rel="stylesheet" href="css\exames_laboratorios_style.css">
+</head>
+<body>
+    <header>
+        <h1>Exames e Laboratórios</h1>
+        <nav>
+            <a href="index.html" id="home">Início</a>
+            <a href="convenios_planos.html" id="convenios-planos">Convênios e Planos de Saúde</a>
+            <a href="especialidades_medicas.html" id="especialidades">Agendar Consultas</a>
+            <a href="pronto_socorro.html" id="atendimento-urgencia">Pronto-Socorro</a>
+            <a href="area_paciente.html" id="area-paciente">Área do Paciente</a>
+            <a href="exames_laboratorios.html" id="exames-laboratorios">Exames e Laboratórios</a>
+            <a href="cadastro_medico.html" id="cadastro-medico">Cadastro de Médico</a>
+            <a href="cadastro_paciente.html" id="cadastro-paciente">Cadastro de Paciente</a>
+            <a href="sobre_hospital.html" id="sobre-hospital">Sobre o Hospital</a>
+        </nav>
+    </header>
+    <main>
+        <section class="info">
+            <div class="highlight-box">
+                <h2>Agende Seus Exames</h2>
+                <input type="text" id="search-bar" placeholder="Buscar exame...">
+                <ul id="exams-list">
+                    <!-- Lista de exames será gerada pelo JavaScript -->
+                </ul>
+            </div>
+            <div id="exam-details" class="hidden">
+                <h3>Detalhes do Exame</h3>
+                <div id="laboratory-list">
+                    <!-- Lista de laboratórios será gerada pelo JavaScript -->
+                </div>
+                <form id="appointment-form" class="hidden">
+                    <label for="laboratory">Escolha o Laboratório:</label>
+                    <select id="laboratory" name="laboratory" required>
+                        <!-- Laboratórios disponíveis serão preenchidos pelo JavaScript -->
+                    </select>
+                    
+                    <label for="appointment-time">Escolha o Horário:</label>
+                    <input type="datetime-local" id="appointment-time" name="appointment-time" required>
+                    
+                    <button type="submit">Confirmar Agendamento</button>
+                </form>
+                <div id="confirmation-message" class="hidden">
+                    <p>Seu exame foi agendado com sucesso!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script\exames_laboratorios_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Médico</title>
+    <link rel="stylesheet" href="css\cadastro_medico_style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Médico</h1>
+        <nav>
+            <a href="index.html" id="home">Início</a>
+            <a href="convenios_planos.html" id="convenios-planos">Convênios e Planos de Saúde</a>
+            <a href="especialidades_medicas.html" id="especialidades">Agendar Consultas</a>
+            <a href="pronto_socorro.html" id="atendimento-urgencia">Pronto-Socorro</a>
+            <a href="area_paciente.html" id="area-paciente">Área do Paciente</a>
+            <a href="exames_laboratorios.html" id="exames-laboratorios">Exames e Laboratórios</a>
+            <a href="cadastro_medico.html" id="cadastro-medico">Cadastro de Médico</a>
+            <a href="cadastro_paciente.html" id="cadastro-paciente">Cadastro de Paciente</a>
+            <a href="sobre_hospital.html" id="sobre-hospital">Sobre o Hospital</a>
+        </nav>
+    </header>
+    <main>
+        <section class="info">
+            <h2>Cadastro de Médico</h2>
+            <form id="doctor-registration-form">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="specialty">Especialidade:</label>
+                    <input type="text" id="specialty" name="specialty" required>
+                    
+                    <label for="crm">CRM:</label>
+                    <input type="text" id="crm" name="crm" required>
+                    
+                    <label for="contact">Contatos:</label>
+                    <input type="text" id="contact" name="contact" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Formação e Experiência</legend>
+                    <label for="education">Formação Acadêmica:</label>
+                    <textarea id="education" name="education" rows="3" required></textarea>
+                    
+                    <label for="experience">Experiência Profissional:</label>
+                    <textarea id="experience" name="experience" rows="3" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Documentos</legend>
+                    <label for="documents">Upload de Documentos:</label>
+                    <input type="file" id="documents" name="documents" multiple required>
+                </fieldset>
+
+                <button type="submit">Confirmar Cadastro</button>
+                <button type="button" id="update-button">Alterar Informações</button>
+                <button type="button" id="delete-button">Excluir Cadastro</button>
+                
+                <!-- Campos de alteração -->
+                <div id="update-fields" class="hidden">
+                    <h3>Alterar Informações do Médico</h3>
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="update-name">Nome Completo:</label>
+                        <input type="text" id="update-name" name="update-name">
+                        
+                        <label for="update-specialty">Especialidade:</label>
+                        <input type="text" id="update-specialty" name="update-specialty">
+                        
+                        <label for="update-crm">CRM:</label>
+                        <input type="text" id="update-crm" name="update-crm">
+                        
+                        <label for="update-contact">Contatos:</label>
+                        <input type="text" id="update-contact" name="update-contact">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Formação e Experiência</legend>
+                        <label for="update-education">Formação Acadêmica:</label>
+                        <textarea id="update-education" name="update-education" rows="3"></textarea>
+                        
+                        <label for="update-experience">Experiência Profissional:</label>
+                        <textarea id="update-experience" name="update-experience" rows="3"></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Documentos</legend>
+                        <label for="update-documents">Upload de Documentos:</label>
+                        <input type="file" id="update-documents" name="update-documents" multiple>
+                    </fieldset>
+
+                    <button type="button" id="apply-update-button">Aplicar Alterações</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script/cadastro_medico_script.js"></script>
+    <script>
+        document.getElementById('update-button').addEventListener('click', function() {
+            var updateFields = document.getElementById('update-fields');
+            updateFields.classList.toggle('hidden');
+        });
+
+        document.getElementById('delete-button').addEventListener('click', function() {
+            alert('Cadastro do médico excluído com sucesso.');
+        });
+    </script>
+</body>
+</html>

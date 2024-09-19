@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convênios e Planos de Saúde</title>
+    <link rel="stylesheet" href="css\convenios_planos_style.css">
+</head>
+<body>
+    <header>
+        <h1>Convênios e Planos de Saúde</h1>
+        <nav>
+            <a href="index.html" id="home">Início</a>
+            <a href="convenios_planos.html" id="convenios-planos">Convênios e Planos de Saúde</a>
+            <a href="especialidades_medicas.html" id="especialidades">Agendar Consultas</a>
+            <a href="pronto_socorro.html" id="atendimento-urgencia">Pronto-Socorro</a>
+            <a href="area_paciente.html" id="area-paciente">Área do Paciente</a>
+            <a href="exames_laboratorios.html" id="exames-laboratorios">Exames e Laboratórios</a>
+            <a href="cadastro_medico.html" id="cadastro-medico">Cadastro de Médico</a>
+            <a href="cadastro_paciente.html" id="cadastro-paciente">Cadastro de Paciente</a>
+            <a href="sobre_hospital.html" id="sobre-hospital">Sobre o Hospital</a>
+        </nav>
+    </header>
+    <main>
+        <section class="info">
+            <div class="highlight-box">
+                <h2>Consulta de Convênios e Planos de Saúde</h2>
+                <p>Verifique se o seu plano de saúde é aceito pelo nosso hospital e obtenha detalhes sobre as coberturas disponíveis.</p>
+                
+                <form id="search-form">
+                    <label for="plan-name">Digite o nome do seu plano de saúde:</label>
+                    <input type="text" id="plan-name" name="plan-name" placeholder="Nome do plano" required>
+                    <button type="submit">Buscar</button>
+                </form>
+
+                <div id="result">
+                    <!-- Resultados da pesquisa aparecerão aqui -->
+                </div>
+                
+                <div id="additional-info">
+                    <h3>Detalhes de Cobertura</h3>
+                    <p>Verifique as coberturas para exames e consultas e saiba se são necessárias autorizações para procedimentos específicos. Caso haja taxas extras ou restrições, essas informações serão fornecidas aqui.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script\convenio_planos_script.js"></script>
+</body>
+</html>
